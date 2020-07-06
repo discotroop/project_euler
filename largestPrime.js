@@ -17,6 +17,13 @@ for (let i = 2; i < 100; i++) {
     starter.push(i)
 }
 
+function sieve() {
+    let i = 0;
+    starter.filter(function(num) {
+        return num % starter[i] === 0;
+    })
+}
+
 console.log(starter)
 
 // sieve of erastothenes
